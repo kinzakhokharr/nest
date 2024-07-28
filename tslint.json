@@ -1,0 +1,32 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rules": {
+    "member-access": [true, "no-public"],
+    "member-ordering": [
+      true,
+      {
+        "order": "statics-first"
+      }
+    ],
+    "no-console": [true, "log", "error"],
+    "no-debugger": true,
+    "no-empty": false,
+    "no-inferrable-types": [true, "ignore-params"],
+    "no-unused-expression": true,
+    "no-var-requires": true,
+    "prefer-const": true,
+    "semicolon": [true, "always"],
+    "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
+    "quotemark": [true, "single", "jsx-double"],
+    "arrow-parens": false,
+    "interface-name": [true, "never-prefix"],
+    "max-classes-per-file": [true, 1],
+    "no-consecutive-blank-lines": [true, 1],
+    "no-irregular-whitespace": true,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  }
+}
